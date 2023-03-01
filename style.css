@@ -11,7 +11,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 0.5fr 4fr;
 }
 
 .sidebar {
@@ -21,7 +21,6 @@
     font-size: 20px;
     font-weight: bold;
 }
-
 .sidebar ul {
     height: 100vh;
     display: flex;
@@ -31,7 +30,6 @@
 }.sidebar ul a:hover {
     color: grey;
 } 
-
 .sidebar .bottom-sidebar {
     display: flex;
     flex-direction: column;
@@ -39,7 +37,6 @@
     height: 15vh;
     justify-content: space-around;
 }
-
 .logo {
     font-size: 27px;
     margin-top: 25px;
@@ -47,10 +44,48 @@
 }
 
 .header {
-    background-color: blue;
+    background-color: #333333;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    gap: 20px;
+}
+
+.profile-icon {
+    height: 75px;
+    width: 75px;
+    background-color: grey;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.header button {
+    padding: 15px;
+    width: 115px;
+    border-style: none;
+    border-radius: 25px;
+    background-color: #1992D4;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content {
-    background-color: red;
+    background-color: #1e1e1e;
 
 }
