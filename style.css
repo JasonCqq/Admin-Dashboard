@@ -7,7 +7,7 @@
     color: white;
 }
 
-.wrapper {
+.main-wrapper {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 5fr;
@@ -53,7 +53,6 @@
     align-items: center;
 }
 
-
 .profile {
     display: flex;
     justify-content: center;
@@ -85,7 +84,44 @@
     justify-content: center;
 }
 
-.content {
+.content-wrapper {
     background-color: #1e1e1e;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+}
+
+.search {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width: 50vh;
+    height: 5vh;
+    border: none;
+    border-radius: 25px;
+    font-size: 25px;
+}
+
+.search button {
+    width: 5vh;
+    height: 5vh;
+    border: none;
+    border-radius: 25px;
+    background-color: #1992D4;
+}
+
+.projects {
+
+}
+
+.announcements {
+
+}
+
+.trending {
 
 }
