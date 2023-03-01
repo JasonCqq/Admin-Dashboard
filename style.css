@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-decoration: none;
     color: white;
+}
+
+body {
+    height: 100vh;
 }
 
 .main-wrapper {
@@ -31,7 +35,9 @@
 
 .sidebar ul a {
     color: #b0d7ff;
-}.sidebar ul a:hover {
+}
+
+.sidebar ul a:hover {
     color: grey;
 }
 
@@ -59,6 +65,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: 10vh;
 }
 
 .profile {
@@ -95,12 +102,14 @@
 .content-wrapper {
     background-color: #1e1e1e;
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    height: 90vh;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    gap: 25px;
 }
 
 .search {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,18 +129,17 @@
     height: 5vh;
     border: none;
     border-radius: 25px;
-    background-color: #1992D4;
-}
-
-.projects {
-    grid-row: 2 / span 3;
-    grid-column: 1 / span 2;
+    background-color: #b0d7ff;
 }
 
 .announcements {
     grid-row: 2;
-    grid-column: 3;
+    grid-column: 2;
     text-align: center;
+}
+
+.announcements h3 {
+    padding-bottom: 25px;
 }
 
 .announcements-wrapper {
@@ -139,12 +147,13 @@
     height: 40vh;
     overflow: hidden;
     flex-direction: column;
-    background-color: #D8D5DB;
+    background-color: #2D3142;
     border-radius: 10px;
     text-align: center;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    margin-right: 10px;
 }
 
 .announcements-wrapper p {
@@ -158,7 +167,37 @@
     color: orange;
 }
 
+.projects {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
+    height: 100%;
+    text-align: center;
+}
+
+.projects h1 {
+    padding-bottom: 10px;
+}
+
+.projects-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 22vh);
+    gap: 20px;
+    justify-items: center;
+}
+
+.projects-wrapper>div {
+    background-color: #2D3142;
+    border: 1px solid #EAE8FF;
+    border-radius: 25px;
+    width: 50vh;
+}
+
+.projects-wrapper div>h5 {
+    color: orange;
+}
+
 .trending {
-    grid-column: 3;
-    grid-row: 3;
+    grid-column: 2;
+    text-align: center;
 }
