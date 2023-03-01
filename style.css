@@ -201,3 +201,29 @@ body {
     grid-column: 2;
     text-align: center;
 }
+.trending h3 {
+    padding-bottom: 25px;
+}
+
+.trending-wrapper {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #2D3142;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+.trending-wrapper p {
+    font-size: 15px;
+    max-width: 250px;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+.trending-wrapper div>h5 {
+    color: orange;
+}
